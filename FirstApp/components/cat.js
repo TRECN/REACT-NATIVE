@@ -4,7 +4,7 @@ import { Text,View,TextInput } from "react-native";
 const Cat =()=>{
   return (
     <View>
-      <Text>hi</Text>
+      
       <TextInput 
       style={{
           height:20,
@@ -13,6 +13,7 @@ const Cat =()=>{
         }}
       />
       </View>
+      
   );
 }
 
