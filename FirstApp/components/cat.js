@@ -1,7 +1,7 @@
 import React from "react";
 import { Text,View } from "react-native";
-import './components/cat'
-const cat =()=>{
+
+const Cat =()=>{
   return (
     <View style={{
       flex:1,
@@ -14,4 +14,5 @@ const cat =()=>{
   );
 }
 
-export default cat
+export default Cat
+
