@@ -3,9 +3,15 @@ import { Text,View,TextInput } from "react-native";
 
 const Cat =(props)=>{
   return (
-    <View>
+    <View style={
+        {
+            display:"flex",
+            justifyContent:'center',
+            alignItems:'center'
+        }
+    }>
       <Text>{props.name}</Text>
-      </View>
+    </View>
       
   );
 }
