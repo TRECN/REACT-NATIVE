@@ -45,7 +45,13 @@ import Cat from './components/Cat'
 
 const App =()=>{
   return (
-    <View >
+    <View 
+    style={{
+      flex:1,
+      justifyContent:'center',
+      alignItems:'center'
+    }}
+    >
       <Cat/>
     </View>
   );
