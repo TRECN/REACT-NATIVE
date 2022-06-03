@@ -46,7 +46,10 @@ import Cat from './components/Cat'
 const App =()=>{
   return (
     <View>
-      <Cat/>
+      <Cat name="Rishabh"/>
+      <Cat name="Rishabh"/>
+      <Cat name="Rishabh"/>
+
     </View>
   );
 }

@@ -1,17 +1,10 @@
 import React from "react";
 import { Text,View,TextInput } from "react-native";
 
-const Cat =()=>{
+const Cat =(props)=>{
   return (
     <View>
-      
-      <TextInput 
-      style={{
-          height:20,
-        borderColor:'gray',
-        borderWidth:2,
-        }}
-      />
+      <Text>{props.name}</Text>
       </View>
       
   );
