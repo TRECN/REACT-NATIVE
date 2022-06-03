@@ -41,12 +41,12 @@
 
 import React from "react";
 import { Text,View } from "react-native";
-import Cats from './components/Cat'
+import Cat from './components/Cat'
 
 const App =()=>{
   return (
     <View >
-      <Cats/>
+      <Cat/>
     </View>
   );
 }
