@@ -3,7 +3,7 @@ import { Text,View,TextInput } from "react-native";
 
 const Cat =()=>{
   return (
-    <>
+    <View>
       <Text>hi</Text>
       <TextInput 
       style={{
@@ -12,7 +12,7 @@ const Cat =()=>{
         borderWidth:2,
         }}
       />
-      </>
+      </View>
   );
 }
 
