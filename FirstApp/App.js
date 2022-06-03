@@ -45,7 +45,7 @@ import Cat from './components/Cat'
 
 const App =()=>{
   return (
-    <View>
+    <View style={{display:'flex'}}>
       <Cat name="Rishabh"/>
       <Cat name="Rishabh"/>
       <Cat name="Rishabh"/>
