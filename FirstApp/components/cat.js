@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Text,View,Button} from "react-native";
+import { Text,View,Button, TextInput} from "react-native";
 
 const Cat =(props)=>{
-  const [isHungry,setIsHungry]=useState(true);
-
+  //const [isHungry,setIsHungry]=useState(true);
+  const[text,setText]=useState('');
   return (
     // <View style={
     //     {
@@ -20,33 +20,41 @@ const Cat =(props)=>{
     //   />
     // </View>
 
-    <View 
-      style={{
-        flex:1,
-        justifyContent:"center",
-        alignItems:"center"
-      }}
-    >
-      <Text>I am {props.name}, and i am {isHungry ? "hungry":"full"}</Text>
-      <Button
-        onPress={()=>{
-          setIsHungry(false);
-        }}
-        disabled={!isHungry}
-        title={isHungry ? "pour me some milk":"thank you!"}
-        />
-        <View 
-          style={{margin:10,  display:"flex", justifyContent:"center", alignItems:"center"}}
-        >
-        <Button
-          onPress={()=>{
-            setIsHungry(true)
-          }}
-          title={"reset"}
-        />
-        </View>
-    </View>
+    // <View 
+    //   style={{
+    //     flex:1,
+    //     justifyContent:"center",
+    //     alignItems:"center"
+    //   }}
+    // >
+    //   <Text>I am {props.name}, and i am {isHungry ? "hungry":"full"}</Text>
+    //   <Button
+    //     onPress={()=>{
+    //       setIsHungry(false);
+    //     }}
+    //     disabled={!isHungry}
+    //     title={isHungry ? "pour me some milk":"thank you!"}
+    //     />
+    //     <View 
+    //       style={{margin:10,  display:"flex", justifyContent:"center", alignItems:"center"}}
+    //     >
+    //     <Button
+    //       onPress={()=>{
+    //         setIsHungry(true)
+    //       }}
+    //       title={"reset"}
+    //     />
+    //     </View>
+    // </View>
       
+    <View style={{padding:10}}>
+      <TextInput
+        style={{height:40}}
+        placeholder="enter text"
+        onChange={}
+      />
+    </View>
+
   );
 }
 

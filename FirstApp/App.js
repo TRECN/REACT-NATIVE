@@ -47,9 +47,6 @@ const App =()=>{
   return (
     <>
       <Cat name="Rishabh"/>
-      <Cat name="raj"/>
-
-
     </>
   );
 }
