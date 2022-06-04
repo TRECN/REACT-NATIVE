@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text,View,Button, TextInput} from "react-native";
+import { Text,View, TextInput} from "react-native";
 
 const Cat =(props)=>{
   //const [isHungry,setIsHungry]=useState(true);
@@ -51,8 +51,12 @@ const Cat =(props)=>{
       <TextInput
         style={{height:40}}
         placeholder="enter text"
-        onChange={}
+        onChange={newText=>setText(newText)}
+        defaultValue={text}
       />
+      <Text style={{padding:10,fontSize:40}}>
+        {text.split(' ').map((word)=>word && '🍕').join(' ')}
+      </Text>
     </View>
 
   );
