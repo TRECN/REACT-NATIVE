@@ -1,5 +1,5 @@
 import React from "react";
-import { Text,View,TextInput } from "react-native";
+import { Text,View,Image} from "react-native";
 
 const Cat =(props)=>{
   return (
@@ -11,6 +11,11 @@ const Cat =(props)=>{
         }
     }>
       <Text>{props.name}</Text>
+      <Image source={{
+        uri:"https://reactnative.dev/docs/assets/p_cat1.png"
+      }}
+      style={{width:200,height:200}}
+      />
     </View>
       
   );
