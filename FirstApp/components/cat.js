@@ -51,11 +51,11 @@ const Cat =(props)=>{
       <TextInput
         style={{height:40}}
         placeholder="enter text"
-        onChange={newText=>setText(newText)}
+        onChangeText={newText=>setText(newText)}
         defaultValue={text}
       />
       <Text style={{padding:10,fontSize:40}}>
-        {text.split(' ').map((word)=>word && '🍕').join(' ')}
+      {text.split(' ').map((word) => word && '🍕').join(' ')}
       </Text>
     </View>
 
