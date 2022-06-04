@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text,View,Image} from "react-native";
+import { Text,View,Button} from "react-native";
 
 const Cat =(props)=>{
   const [isHungry,setIsHungry]=useState(true);
