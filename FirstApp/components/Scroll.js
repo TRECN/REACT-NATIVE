@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, Text, Image} from 'react-native';
+import {ScrollView, Text, Image,StyleSheet,View} from 'react-native';
 
 const logo = {
   uri: 'https://reactnative.dev/img/tiny_logo.png',
@@ -7,9 +7,18 @@ const logo = {
   height: 64,
 };
 
+const styles=StyleSheet.create({
+    container:{
+        flex:1,
+        padding:22,
+        height:200
+    }
+})
+
 const Scroll = () => {
   return (
-    <ScrollView>
+      <View style={styles.container}>
+          <ScrollView >
       <Text style={{fontSize: 98}}>Scroll</Text>
       <Image source={logo} />
       <Image source={logo} />
@@ -42,7 +51,9 @@ const Scroll = () => {
       <Image source={logo} />
       <Text style={{fontSize: 80}}>React Native</Text>
     </ScrollView>
-  );
+
+      </View>
+      );
 };
 
 export default Scroll;
