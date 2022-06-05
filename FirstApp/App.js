@@ -42,11 +42,13 @@
 import React from "react";
 import { Text,View } from "react-native";
 import Cat from './components/Cat'
+import Scrollview from "./components/scrollView";
 
 const App =()=>{
   return (
     <>
-      <Cat name="Rishabh"/>
+      {/* <Cat name="Rishabh"/> */}
+      <Scrollview/>
     </>
   );
 }
