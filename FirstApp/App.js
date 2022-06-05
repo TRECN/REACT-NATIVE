@@ -42,6 +42,7 @@
 import React from "react";
 import { Text,View } from "react-native";
 import Cat from './components/Cat'
+import Flat_lists from "./components/Flat_lists";
 import Scroll from "./components/Scroll";
 
 const App =()=>{
@@ -49,6 +50,7 @@ const App =()=>{
     <>
       <Cat name="Rishabh"/>
       <Scroll/>
+      <Flat_lists/>
     </>
   );
 }
