@@ -10,7 +10,7 @@ const logo={
 const Scrollview =()=>{
     return(
         <ScrollView>
-            <Text>
+            <Text style={{fontSize:98}}>
                 Scroll
             </Text>
         </ScrollView>
