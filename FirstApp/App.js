@@ -40,7 +40,7 @@
 // export default App
 
 import React from "react";
-
+import { View } from "react-native";
 import Cat from './components/Cat'
 import Flat_lists from "./components/Flat_lists";
 import Scroll from "./components/Scroll";
@@ -50,9 +50,11 @@ const App =()=>{
   return (
     <>
       <Cat name="Rishabh"/>
-      <Scroll/>
-      <Flat_lists/>
-      <Section_List/>
+      <View style={{flex:1,padding:20}}>
+        <Scroll/>
+        <Flat_lists/>
+        <Section_List/>
+      </View>
     </>
   );
 }
