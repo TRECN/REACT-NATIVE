@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionList, StyleSheet } from "react-native";
+import { View,Text,SectionList, StyleSheet } from "react-native";
 
 const styles=StyleSheet.create({
     container:{
@@ -21,7 +21,7 @@ const styles=StyleSheet.create({
 
 const Section_List=()=>{
     return(
-        <View>
+        <View style={styles.container}>
             <SectionList
                 sections={[
                     {title:'D',data:['rishabh1','rishabh2','rishabh3']},
