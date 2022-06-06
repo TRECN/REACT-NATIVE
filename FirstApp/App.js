@@ -40,11 +40,11 @@
 // export default App
 
 import React from "react";
-import { Text,View } from "react-native";
+
 import Cat from './components/Cat'
 import Flat_lists from "./components/Flat_lists";
 import Scroll from "./components/Scroll";
-import Section_List from "./components/Section_List";
+import Section_Lists from "./components/Section_Lists";
 
 const App =()=>{
   return (
@@ -52,7 +52,7 @@ const App =()=>{
       <Cat name="Rishabh"/>
       <Scroll/>
       <Flat_lists/>
-      <Section_List/>
+      <Section_Lists/>
     </>
   );
 }
