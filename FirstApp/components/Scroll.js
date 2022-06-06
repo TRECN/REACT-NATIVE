@@ -19,7 +19,7 @@ const Scroll = () => {
   return (
       <View style={styles.container}>
           <ScrollView >
-      <Text style={{fontSize: 98}}>Scroll</Text>
+      <Text style={{fontSize: 98}}>Scrollview</Text>
       <Image source={logo} />
       <Image source={logo} />
       <Image source={logo} />
