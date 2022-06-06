@@ -44,7 +44,7 @@ import React from "react";
 import Cat from './components/Cat'
 import Flat_lists from "./components/Flat_lists";
 import Scroll from "./components/Scroll";
-import Section_Lists from "./components/Section_Lists";
+import Section_List from "./components/Section_List";
 
 const App =()=>{
   return (
@@ -52,7 +52,7 @@ const App =()=>{
       <Cat name="Rishabh"/>
       <Scroll/>
       <Flat_lists/>
-      <Section_Lists/>
+      <Section_List/>
     </>
   );
 }
