@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { SectionList, StyleSheet } from "react-native";
 
 const styles=StyleSheet.create({
     container:{
@@ -20,7 +20,20 @@ const styles=StyleSheet.create({
 })
 
 const Section_List=()=>{
-    return();
+    return(
+        <View>
+            <SectionList
+                sections={[
+                    {title:'D',data:['rishabh1','rishabh2','rishabh3']},
+                    {title:'A',data:['raj1','raj2','raj3','raj4','raj5','raj6']},
+
+                ]}
+                renderItem={({item})=><Text style={styles.item}>{item}</Text>}
+                renderSectionHeader={({sections})=><Text style={styles.sectionHeader}>{sections.title}</Text>}
+                keyExtractor={(item,index)=>index}
+            />
+        </View>
+    );
 }
 
 export default Section_List
