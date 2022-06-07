@@ -50,11 +50,11 @@ import ApiFetch from './components/ApiFetch'
 const App =()=>{
   return (
     <>
-      <Cat name="Rishabh"/>
+      {/* <Cat name="Rishabh"/> */}
       <View style={{flex:1,padding:20}}>
-        <Scroll/>
+        {/* <Scroll/>
         <Flat_lists/>
-        <Section_List/>
+        <Section_List/> */}
         <ApiFetch/>
       </View>
     </>
