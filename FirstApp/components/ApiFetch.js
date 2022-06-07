@@ -34,3 +34,5 @@ const ApiFetch=()=>{
         </View>
     );
 }
+
+export default ApiFetch
