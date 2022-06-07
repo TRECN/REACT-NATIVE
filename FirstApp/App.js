@@ -45,6 +45,7 @@ import Cat from './components/Cat'
 import Flat_lists from "./components/Flat_lists";
 import Scroll from "./components/Scroll";
 import Section_List from "./components/Section_List";
+import ApiFetch from './components/ApiFetch'
 
 const App =()=>{
   return (
@@ -54,6 +55,7 @@ const App =()=>{
         <Scroll/>
         <Flat_lists/>
         <Section_List/>
+        <ApiFetch/>
       </View>
     </>
   );
