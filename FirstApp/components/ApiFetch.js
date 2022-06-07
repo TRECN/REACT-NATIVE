@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { ActivityIndicator, FlatList, View } from "react-native";
 const ApiFetch=()=>{
     const [isLoading,setLoading]=useState(true);
     const [data,setData]=useState([]);
@@ -20,5 +20,17 @@ const ApiFetch=()=>{
         getMovie();
     },[])
 
-    return (<></>);
+    return (
+        <View 
+            style={{}}
+        >
+            {isLoading?<ActivityIndicator/>:(<FlatList
+                data={data}
+                keyExtractor={({id},index)=>id}
+                renderItem={({item})=>{
+                    <Text>{item.title},{item.releaseYear}</Text>
+                }}
+            />)}
+        </View>
+    );
 }
