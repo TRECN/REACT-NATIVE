@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ActivityIndicator, FlatList, View } from "react-native";
+import { ActivityIndicator, FlatList, View ,Text} from "react-native";
 const ApiFetch=()=>{
     const [isLoading,setLoading]=useState(true);
     const [data,setData]=useState([]);
@@ -22,7 +22,7 @@ const ApiFetch=()=>{
 
     return (
         <View 
-            style={{}}
+            style={{flex:1,padding:24}}
         >
             {isLoading?<ActivityIndicator/>:(<FlatList
                 data={data}
