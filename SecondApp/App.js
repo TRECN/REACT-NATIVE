@@ -1,9 +1,25 @@
-import React from "react";
-import {View} from "react-native"
-const App =()=>{
+//rnfes
+
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const App = () => {
   return (
-    <View></View>
-  );
+    <View>
+      <Text
+        style={styles.container}
+      >This is my quizz app</Text>
+    </View>
+  )
 }
 
-export default App 
+export default App
+
+const styles = StyleSheet.create({
+  container:{
+
+    padding:20
+
+  }
+
+})
