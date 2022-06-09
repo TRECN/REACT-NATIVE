@@ -2,13 +2,14 @@
 
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Home from './screens/Home'
+import Quiz from './screens/Quiz'
+import Result from './screens/Result'
 
 const App = () => {
   return (
     <View>
-      <Text
-        style={styles.container}
-      >This is my quizz app</Text>
+      <Home/>
     </View>
   )
 }
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
   container:{
 
     padding:20
-
+    
   }
 
 })
