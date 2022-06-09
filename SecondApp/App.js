@@ -8,7 +8,9 @@ import Result from './screens/Result'
 
 const App = () => {
   return (
-    <View>
+    <View 
+      style={styles.container}
+    >
       <Home/>
     </View>
   )
@@ -19,7 +21,7 @@ export default App
 const styles = StyleSheet.create({
   container:{
 
-    padding:20
+    paddingTop:20
     
   }
 
