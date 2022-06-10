@@ -7,7 +7,7 @@ const Home = () => {
     <View>
       <Title/>
       <View>
-        <Image source={{uri:'https://cdni.iconscout.com/illustration/premium/preview/q-and-a-service-3678714-3098907.png?w=0&h=700'}}
+        <Image source={{uri:''}}
         style={styles.banner}/>
       </View>
       <TouchableOpacity>
