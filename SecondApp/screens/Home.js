@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View ,TouchableOpacity,Image} from 'react-native'
+import { StyleSheet, Text, View ,TouchableOpacity,Image,Svg} from 'react-native'
 import React from 'react'
 import Title from '../Components/Title'
 
@@ -7,8 +7,7 @@ const Home = () => {
     <View>
       <Title/>
       <View>
-        <Image source={{uri:''}}
-        style={styles.banner}/>
+        
       </View>
       <TouchableOpacity>
             <Text> Submit</Text>
