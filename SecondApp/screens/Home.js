@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <View>
       <Title/>
-      <View>
-        
+      <View style={styles.banner}>
+        <Image source={require('../assets/imgQuiz.png')}/>
       </View>
       <TouchableOpacity>
             <Text> Submit</Text>
