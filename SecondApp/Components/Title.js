@@ -3,7 +3,7 @@ import React from 'react'
 
 const Title = () => {
   return (
-    <View>
+    <View style={styles.al}>
       <Text>Quizzer</Text>
     </View>
   )
@@ -11,4 +11,9 @@ const Title = () => {
 
 export default Title
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  al:{
+    justifyContent:'center',
+    alignItems:'center'
+  }
+})
