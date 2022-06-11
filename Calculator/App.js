@@ -52,6 +52,9 @@ const styles = StyleSheet.create({
     operator:{
       flex:1,
       flexDirection:'row',
+      height:100,
+      justifyContent:'center',
+      alignItems:'center'
     },  
     digits:{
       flex:1,
