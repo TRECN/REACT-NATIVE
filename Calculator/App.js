@@ -30,7 +30,7 @@ const App = () => {
       </View>
       <View style={styles.digits}>
 
-        {createDigits()}
+        {createDigits(3)}
         <Btn  title='0'/>
         <Btn  title='.'/>
         <Btn  title='='/>
