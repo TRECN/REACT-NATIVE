@@ -8,7 +8,7 @@ const App = () => {
     const digits=[];
     for(let i=1;i<10;i++){
       digits.push(
-        <Btn  title={i.toString()}/>
+        <Btn key={i} title={i.toString()}/>
       )
     }
     return digits
