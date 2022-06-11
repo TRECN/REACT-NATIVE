@@ -19,7 +19,7 @@ const App = () => {
       <View>
         <Text>0</Text>
       </View>
-      <View>
+      <View style={styles.operator}>
         <Btn title='/'/>
         <Btn title='*'/>
         <Btn title='+'/>
@@ -43,11 +43,17 @@ const App = () => {
 export default App
 
 const styles = StyleSheet.create({
+
     container:{
       flex:1,
       justifyContent:'center',
       alignItems:'center'
     },
+    operator:{
+      flex:1,
+      flexDirection:'row',
+
+    },  
     digits:{
       flex:1,
       flexWrap:'wrap'

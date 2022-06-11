@@ -6,7 +6,7 @@ const ButtonComp = ({onPress,title}) => {
     <TouchableOpacity onPress={onPress}
         style={styles.Btn}
     >
-        <Text>{title}</Text>
+        <Text style={{color:'white'}}>{title}</Text>
     </TouchableOpacity>
   )
 }
@@ -15,9 +15,11 @@ export default ButtonComp
 
 const styles = StyleSheet.create({
     Btn:{
-        padding:5,
+        paddingHorizontal:30,
         margin:10,
-        maxWidth:33.33,
-        backgroundColor:'blue'
+
+        backgroundColor:'black',
+        borderWidth:1,
+        borderRadius:10
     }
 })
