@@ -4,9 +4,9 @@ import Btn from './components/ButtonComp'
 
 const App = () => {
 
-  const createDigits=()=>{
+  const createDigits=(n)=>{
     const digits=[];
-    for(let i=1;i<10;i++){
+    for(let i=1;i<n;i++){
       digits.push(
         <Btn key={i} title={i.toString()}/>
       )
