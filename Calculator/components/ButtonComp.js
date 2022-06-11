@@ -15,9 +15,8 @@ export default ButtonComp
 
 const styles = StyleSheet.create({
     Btn:{
-        paddingHorizontal:30,
+        paddingHorizontal:10,
         margin:10,
-
         backgroundColor:'black',
         borderWidth:1,
         borderRadius:10

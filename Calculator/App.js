@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     operator:{
       flex:1,
       flexDirection:'row',
-
     },  
     digits:{
       flex:1,
