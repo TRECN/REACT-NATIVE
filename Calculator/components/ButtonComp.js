@@ -3,7 +3,9 @@ import React from 'react'
 
 const ButtonComp = ({onPress,title}) => {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress}
+        style={styles.Btn}
+    >
         <Text>{title}</Text>
     </TouchableOpacity>
   )
@@ -11,4 +13,6 @@ const ButtonComp = ({onPress,title}) => {
 
 export default ButtonComp
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    Btn
+})
