@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View,Button } from 'react-native'
 import React from 'react'
+import Btn from './components/ButtonComp'
 
 const App = () => {
 
@@ -7,7 +8,7 @@ const App = () => {
     const digits=[];
     for(let i=1;i<10;i++){
       digits.push(
-        <Button title={i.toString()}/>
+        <Btn title={i.toString()}/>
       )
     }
     return digits
@@ -19,20 +20,20 @@ const App = () => {
         <Text>0</Text>
       </View>
       <View>
-        <Button title='/'/>
-        <Button title='*'/>
-        <Button title='+'/>
-        <Button title='-'/>
+        <Btn title='/'/>
+        <Btn title='*'/>
+        <Btn title='+'/>
+        <Btn title='-'/>
 
-        <Button title='DEL'/>
+        <Btn title='DEL'/>
 
       </View>
       <View>
 
         {createDigits()}
-        <Button title='0'/>
-        <Button title='.'/>
-        <Button title='='/>
+        <Btn title='0'/>
+        <Btn title='.'/>
+        <Btn title='='/>
       </View>
     </View>
     
