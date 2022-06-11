@@ -8,7 +8,7 @@ const App = () => {
     const digits=[];
     for(let i=1;i<10;i++){
       digits.push(
-        <Btn title={i.toString()}/>
+        <Btn  title={i.toString()}/>
       )
     }
     return digits
@@ -31,9 +31,9 @@ const App = () => {
       <View style={styles.digits}>
 
         {createDigits()}
-        <Btn title='0'/>
-        <Btn title='.'/>
-        <Btn title='='/>
+        <Btn  title='0'/>
+        <Btn  title='.'/>
+        <Btn  title='='/>
       </View>
     </View>
     
@@ -49,10 +49,8 @@ const styles = StyleSheet.create({
       alignItems:'center'
     },
     digits:{
-      display:'flex',
+      flex:1,
       flexWrap:'wrap'
     },
-    btnDigit:{
-      
-    }
+
 })

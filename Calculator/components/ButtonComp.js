@@ -14,5 +14,10 @@ const ButtonComp = ({onPress,title}) => {
 export default ButtonComp
 
 const styles = StyleSheet.create({
-    Btn
+    Btn:{
+        padding:5,
+        margin:10,
+        maxWidth:33.33,
+        backgroundColor:'blue'
+    }
 })
