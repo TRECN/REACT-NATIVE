@@ -30,10 +30,10 @@ const App = () => {
       </View>
       <View style={styles.digits}>
 
-        {createDigits(3)}
+        {createDigits(4)}
         <Btn  title='0'/>
         <Btn  title='.'/>
-        <Btn  title='='/>
+
       </View>
     </View>
     
@@ -52,13 +52,14 @@ const styles = StyleSheet.create({
     operator:{
       flex:1,
       flexDirection:'row',
-      height:100,
       justifyContent:'center',
       alignItems:'center'
     },  
     digits:{
       flex:1,
-      flexWrap:'wrap'
+      flexDirection:'row',
+      justifyContent:'center'
+      
     },
 
 })
