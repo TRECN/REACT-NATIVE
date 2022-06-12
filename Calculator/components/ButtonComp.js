@@ -6,13 +6,14 @@ const screen = Dimensions.get("window")
 
 const ButtonComp = ({onPress,title}) => {
 
-  
+  const buttonStyle=[styles.Btn];
+  const textStyle=[styles.text]
 
   return (
     <TouchableOpacity onPress={onPress}
-        style={styles.Btn}
+        style={buttonStyle}
     >
-        <Text style={{color:'white'}}>{title}</Text>
+        <Text style={textStyle}>{title}</Text>
     </TouchableOpacity>
   )
 }
@@ -29,5 +30,9 @@ const styles = StyleSheet.create({
         alignItems:'center',
         height:Math.floor(ButtonWidth-10),
         margin:5
-    }
+    },
+    text:{
+      color:'#fff',
+      fontSize:25
+    },
 })
