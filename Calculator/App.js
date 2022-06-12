@@ -22,7 +22,10 @@ const App = () => {
         <Text>0</Text>
       </View>
       <Row>
-        <Btn title={'DEL'} size={''}/>
+        <Btn 
+          title='DEL'
+          theme='secondary'
+        />
       </Row>
         
     </View>
