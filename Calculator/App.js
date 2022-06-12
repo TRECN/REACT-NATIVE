@@ -5,9 +5,9 @@ import Row from './components/Row'
 
 const App = () => {
 
-  const createDigits=(n)=>{
+  const createDigits=(n,n1)=>{
     const digits=[];
-    for(let i=1;i<n;i++){
+    for(let i=n;i<=n1;i++){
       digits.push(
         <Btn key={i} title={i.toString()}/>
       )
@@ -23,7 +23,33 @@ const App = () => {
       </View>
       <Row>
         <Btn 
+          title='AC'
+          theme='secondary'
+        />
+        <Btn 
           title='DEL'
+          theme='secondary'
+        />
+        <Btn 
+          title='%'
+          theme='secondary'
+        />
+        <Btn 
+          title='/'
+          theme='secondary'
+        />
+      </Row>
+      <Row>
+        {createDigits(1,3)}
+        <Btn 
+          title='x'
+          theme='secondary'
+        />
+      </Row>
+      <Row>
+        {createDigits(4,6)}
+        <Btn 
+          title='-'
           theme='secondary'
         />
       </Row>

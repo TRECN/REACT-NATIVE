@@ -1,17 +1,16 @@
 import { StyleSheet, View } from 'react-native'
 import React from 'react'
 
-const Row = ({component}) => {
-  return (
+export default ({children}) => (
     <View 
         style={styles.row}
     >
-      {component}
+      {children}
     </View>
-  )
-}
+  
+)
 
-export default Row
+
 
 const styles = StyleSheet.create({
     row:{
