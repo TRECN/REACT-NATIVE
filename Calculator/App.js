@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View,Button } from 'react-native'
+import { StyleSheet, Text, View,} from 'react-native'
 import React from 'react'
 import Btn from './components/ButtonComp'
+import Row from './components/Row'
 
 const App = () => {
 
@@ -15,26 +16,14 @@ const App = () => {
   }
 
   return (
+    // onPress, title, size, theme
     <View style={styles.container}>
-      <View>
+      <View >
         <Text>0</Text>
       </View>
-      <View style={styles.operator}>
-        <Btn title='/'/>
-        <Btn title='*'/>
-        <Btn title='+'/>
-        <Btn title='-'/>
-
-        <Btn title='DEL'/>
-
-      </View>
-      <View style={styles.digits}>
-
-        {createDigits(4)}
-        <Btn  title='0'/>
-        <Btn  title='.'/>
-
-      </View>
+      <Row>
+        <Btn title='DEL' size='secondary'/>
+      </Row>
     </View>
     
   )
@@ -59,7 +48,7 @@ const styles = StyleSheet.create({
       flex:1,
       flexDirection:'row',
       justifyContent:'center'
-      
+
     },
 
 })
