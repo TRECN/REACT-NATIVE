@@ -46,7 +46,18 @@ const ButtonComp = ({onPress, title, size, theme}) => {
   const BtnStyle = [styles.Btn];
   const TxtStyle = [styles.Txt];
 
-  if (size == 'double')
+    if (size == 'double')
+      BtnStyle.push(styles.BtnDouble)
+
+    if(theme=='secondary'){
+      BtnStyle.push(styles.BtnSecondary);
+      TxtStyle.push(styles.TxtSecond)
+    }else if(theme=='accent'){
+      BtnStyle.push(styles.BtnAccent)
+    }
+
+
+
     return (
       <TouchableOpacity onPress={onPress} style={BtnStyle}>
         <Text style={TxtStyle}>{title}</Text>
