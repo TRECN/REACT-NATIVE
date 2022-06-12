@@ -1,55 +1,57 @@
-import { StyleSheet, Text, View ,TouchableOpacity,Dimensions} from 'react-native'
-import React from 'react'
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Dimensions,
+} from 'react-native';
+import React from 'react';
 
-const screen = Dimensions.get("window")
-const ButtonWidth=screen.width/4;
-
-
+const screen = Dimensions.get('window');
+const ButtonWidth = screen.width / 4;
 
 const styles = StyleSheet.create({
-    Btn:{
-        backgroundColor:'#333333',
-        borderRadius:Math.floor(ButtonWidth),
-        flex:1,
+  Btn: {
+    backgroundColor: '#333333',
+    borderRadius: Math.floor(ButtonWidth),
+    flex: 1,
 
-        justifyContent:'center',
-        alignItems:'center',
-        height:Math.floor(ButtonWidth-10),
-        margin:5
-    },
-    text:{
-      color:'#fff',
-      fontSize:25
-    },
-    textSecond:{
-      color:'#060606'
-    },
-    BtnDouble:{
-      width:screen.width/2-10,
-      flex:0,
-      alignItems:'flex-start',
-      paddingLeft:40
-    },
-    BtnSecondary: {
-      backgroundColor: "#a6a6a6"
-    },
-    BtnAccent: {
-      backgroundColor: "#f09a36"
-    }
-})
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: Math.floor(ButtonWidth - 10),
+    margin: 5,
+  },
+  Txt: {
+    color: '#fff',
+    fontSize: 25,
+  },
+  TxtSecond: {
+    color: '#060606',
+  },
+  BtnDouble: {
+    width: screen.width / 2 - 10,
+    flex: 0,
+    alignItems: 'flex-start',
+    paddingLeft: 40,
+  },
+  BtnSecondary: {
+    backgroundColor: '#a6a6a6',
+  },
+  BtnAccent: {
+    backgroundColor: '#f09a36',
+  },
+});
 
-const ButtonComp = ({onPress,title}) => {
+const ButtonComp = ({onPress, title, size, theme}) => {
+  const BtnStyle = [styles.Btn];
+  const TxtStyle = [styles.Txt];
 
-  const buttonStyle=[styles.Btn];
-  const textStyle=[styles.text]
+  if (size == 'double')
+    return (
+      <TouchableOpacity onPress={onPress} style={BtnStyle}>
+        <Text style={TxtStyle}>{title}</Text>
+      </TouchableOpacity>
+    );
+};
 
-  return (
-    <TouchableOpacity onPress={onPress}
-        style={buttonStyle}
-    >
-        <Text style={textStyle}>{title}</Text>
-    </TouchableOpacity>
-  )
-}
-
-export default ButtonComp
+export default ButtonComp;
