@@ -37,5 +37,11 @@ const styles = StyleSheet.create({
     },
     textSecond:{
       color:'#060606'
+    },
+    BtnDouble:{
+      width:screen.width/2-10,
+      flex:0,
+      alignItems:'flex-start',
+      paddingLeft:40
     }
 })
