@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,} from 'react-native'
+import { StyleSheet, Text, View,StatusBar} from 'react-native'
 import React from 'react'
 import Btn from './components/ButtonComp'
 import Row from './components/Row'
@@ -18,6 +18,8 @@ const App = () => {
   return (
     // onPress, title, size, theme
     <View style={styles.container}>
+      <StatusBar barStyle='light-content'/>
+      
       <View >
         <Text style={styles.result}>0</Text>
       </View>
@@ -81,7 +83,8 @@ export default App
 
 const styles = StyleSheet.create({
     result:{
-      color:'#fff'
+      color:'#fff',
+      fontSize:60
     },
     container:{
       flex:1,
