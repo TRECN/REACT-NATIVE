@@ -30,8 +30,6 @@ const styles = StyleSheet.create({
   BtnDouble: {
     width: screen.width / 2 - 10,
     flex: 0,
-    alignItems: 'flex-start',
-    paddingLeft: 40,
   },
   BtnSecondary: {
     backgroundColor: '#a6a6a6',
@@ -39,6 +37,13 @@ const styles = StyleSheet.create({
   BtnAccent: {
     backgroundColor: '#f09a36',
   },
+  BtnEqual:{
+    backgroundColor:'orange',
+  },
+  TxtEqual:{
+    textAlign:'center',
+    fontSize:50
+  }
 });
 
 const ButtonComp = ({onPress, title, size, theme}) => {
@@ -53,6 +58,9 @@ const ButtonComp = ({onPress, title, size, theme}) => {
       TxtStyle.push(styles.TxtSecond)
     }else if(theme=='accent'){
       BtnStyle.push(styles.BtnAccent)
+    }else if(theme=='equal'){
+      BtnStyle.push(styles.BtnEqual)
+      TxtStyle.push(styles.TxtEqual)
     }
 
 

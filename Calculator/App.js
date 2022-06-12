@@ -19,7 +19,7 @@ const App = () => {
     // onPress, title, size, theme
     <View style={styles.container}>
       <View >
-        <Text>0</Text>
+        <Text style={styles.result}>0</Text>
       </View>
       <Row>
         <Btn 
@@ -53,7 +53,25 @@ const App = () => {
           theme='secondary'
         />
       </Row>
-        
+      <Row>
+        {createDigits(7,9)}
+        <Btn 
+          title='+'
+          theme='secondary'
+        />
+      </Row>
+      <Row>
+        <Btn 
+          title='0'
+        />
+        <Btn title='.' />
+        <Btn 
+          title='='
+          size='double'
+          theme='equal'
+
+        />
+      </Row>
     </View>
     
   )
@@ -62,11 +80,14 @@ const App = () => {
 export default App
 
 const styles = StyleSheet.create({
-
+    result:{
+      color:'#fff'
+    },
     container:{
       flex:1,
       justifyContent:'center',
-      alignItems:'center'
+      alignItems:'center',
+      backgroundColor:'#060606'
     },
     operator:{
       flex:1,
