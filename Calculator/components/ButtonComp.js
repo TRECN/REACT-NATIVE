@@ -35,4 +35,7 @@ const styles = StyleSheet.create({
       color:'#fff',
       fontSize:25
     },
+    textSecond:{
+      color:'#060606'
+    }
 })
