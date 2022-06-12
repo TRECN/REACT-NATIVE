@@ -2,23 +2,9 @@ import { StyleSheet, Text, View ,TouchableOpacity,Dimensions} from 'react-native
 import React from 'react'
 
 const screen = Dimensions.get("window")
-  const ButtonWidth=screen.width/4;
+const ButtonWidth=screen.width/4;
 
-const ButtonComp = ({onPress,title}) => {
 
-  const buttonStyle=[styles.Btn];
-  const textStyle=[styles.text]
-
-  return (
-    <TouchableOpacity onPress={onPress}
-        style={buttonStyle}
-    >
-        <Text style={textStyle}>{title}</Text>
-    </TouchableOpacity>
-  )
-}
-
-export default ButtonComp
 
 const styles = StyleSheet.create({
     Btn:{
@@ -43,5 +29,27 @@ const styles = StyleSheet.create({
       flex:0,
       alignItems:'flex-start',
       paddingLeft:40
+    },
+    BtnSecondary: {
+      backgroundColor: "#a6a6a6"
+    },
+    BtnAccent: {
+      backgroundColor: "#f09a36"
     }
 })
+
+const ButtonComp = ({onPress,title}) => {
+
+  const buttonStyle=[styles.Btn];
+  const textStyle=[styles.text]
+
+  return (
+    <TouchableOpacity onPress={onPress}
+        style={buttonStyle}
+    >
+        <Text style={textStyle}>{title}</Text>
+    </TouchableOpacity>
+  )
+}
+
+export default ButtonComp
