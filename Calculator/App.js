@@ -24,6 +24,7 @@ const App = () => {
     }
     return digits
   }
+  
 
   return (
     // onPress, title, size, theme
@@ -42,6 +43,10 @@ const App = () => {
           theme='secondary'
         />
         <Btn 
+        calc={calc}
+        setCalc={setCalc}
+        result={result}
+        setResult={setResult}
           title='DEL'
           theme='secondary'
         />

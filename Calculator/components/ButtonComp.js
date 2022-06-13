@@ -78,17 +78,17 @@ const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
       }
     }
 
-    const delLast=(calc)=>{
+    const delLast=()=>{
       if(calc=='')
         return;
 
-      const value=calc.slice(0,-1);
+      const value= calc.slice(0,-1)
       setCalc(value)
     }
 
     const clickBtn=(title)=>{
       if(title=='DEL')
-        delLast(calc)
+        delLast()
       else
         updateCalc(title)
     }
