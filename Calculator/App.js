@@ -42,10 +42,10 @@ const App = () => {
           theme='secondary'
         />
         <Btn 
-
           title='DEL'
           theme='secondary'
         />
+        {/* % */}
         <Btn 
           calc={calc}
           setCalc={setCalc}
@@ -54,6 +54,7 @@ const App = () => {
           title='%'
           theme='secondary'
         />
+        {/* / */}
         <Btn 
           calc={calc}
           setCalc={setCalc}
@@ -65,6 +66,7 @@ const App = () => {
       </Row>
       <Row>
       {createDigits(1,3)}
+      {/* * */}
         <Btn 
           calc={calc}
           setCalc={setCalc}
@@ -76,6 +78,7 @@ const App = () => {
       </Row>
       <Row>
         {createDigits(4,6)}
+        {/* - */}
         <Btn 
           calc={calc}
           setCalc={setCalc}
@@ -88,6 +91,7 @@ const App = () => {
       </Row>
       <Row>
         {createDigits(7,9)}
+        {/* + */}
         <Btn 
           calc={calc}
           setCalc={setCalc}
@@ -98,6 +102,7 @@ const App = () => {
         />
       </Row>
       <Row>
+        {/* 0 */}
         <Btn 
         calc={calc}
         setCalc={setCalc}
@@ -105,6 +110,7 @@ const App = () => {
         setResult={setResult}
           title='0'
         />
+        {/* . */}
         <Btn 
           calc={calc}
           setCalc={setCalc}
@@ -112,6 +118,7 @@ const App = () => {
           setResult={setResult}
           title='.' 
         />
+        {/* = */}
         <Btn 
           calc={calc}
           setCalc={setCalc}
@@ -133,7 +140,7 @@ export default App
 const styles = StyleSheet.create({
     result:{
       color:'#fff',
-      fontSize:60,
+      fontSize:30,
       textAlign:'right',
       marginRight:20,
       marginBottom:60,

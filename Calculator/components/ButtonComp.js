@@ -78,9 +78,23 @@ const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
       }
     }
 
+    const delLast=(calc)=>{
+      if(calc=='')
+        return;
+
+      const value=calc.slice(0,-1);
+      setCalc(value)
+    }
+
+    const clickBtn=(title)=>{
+      if(title=='DEL')
+        delLast(calc)
+      else
+        updateCalc(title)
+    }
 
     return (
-      <TouchableOpacity onPress={()=>updateCalc(title)} style={BtnStyle}>
+      <TouchableOpacity onPress={()=>clickBtn(title)} style={BtnStyle}>
         <Text style={TxtStyle}>{title}</Text>
       </TouchableOpacity>
     );
