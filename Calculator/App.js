@@ -5,8 +5,8 @@ import Row from './components/Row'
 
 const App = () => {
 
-  const [calc,setCalc]=useState('');
-  const [result,setResult]=useState('')
+  const [calc,setCalc]=useState("");
+  const [result,setResult]=useState("")
 
   const createDigits=(n,n1)=>{
     const digits=[];
@@ -14,7 +14,11 @@ const App = () => {
       digits.push(
         <Btn 
         key={i} 
-        onPress={()=>updateCalc(i.toString())}
+        calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+        
         title={i.toString()}/>
       )
     }
@@ -27,65 +31,98 @@ const App = () => {
       <StatusBar barStyle='light-content'/>
       
       <View >
-      <Text style={styles.result}>{result?({result}):''}{calc||'0'}</Text>
+      <Text style={styles.result}>
+        ({result}){calc?calc:'0'}
+        </Text>
       </View>
       <Row>
         <Btn 
-        
+          
           title='AC'
           theme='secondary'
         />
         <Btn 
+
           title='DEL'
           theme='secondary'
         />
         <Btn 
-          onPress={()=>updateCalc('%')}
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
           title='%'
           theme='secondary'
         />
         <Btn 
-          onPress={()=>updateCalc('/')}
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
           title='/'
           theme='secondary'
         />
       </Row>
       <Row>
-        
+      {createDigits(1,3)}
         <Btn 
-          onPress={()=>updateCalc('1')}
-          title='1'
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='*'
           theme='secondary'
         />
       </Row>
-      {/* <Row>
+      <Row>
         {createDigits(4,6)}
         <Btn 
-          onPress={()=>updateCalc('-')}
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
           title='-'
           theme='secondary'
+          
         />
       </Row>
       <Row>
         {createDigits(7,9)}
         <Btn 
-          onPress={()=>updateCalc('+')}
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
           title='+'
           theme='secondary'
         />
       </Row>
       <Row>
         <Btn 
+        calc={calc}
+        setCalc={setCalc}
+        result={result}
+        setResult={setResult}
           title='0'
         />
-        <Btn title='.' />
         <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='.' 
+        />
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
           title='='
           size='double'
           theme='equal'
 
         />
-      </Row> */}
+      </Row>
     </View>
     
   )
