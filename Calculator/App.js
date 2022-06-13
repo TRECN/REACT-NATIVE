@@ -33,8 +33,9 @@ const App = () => {
       
       <View >
       <Text style={styles.result}>
-        ({result}){calc?calc:'0'}
+        {calc?calc:'0'}
         </Text>
+        <Text>={result}</Text>
       </View>
       <Row>
         <Btn 
