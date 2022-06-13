@@ -1,9 +1,20 @@
 import { StyleSheet, Text, View,StatusBar} from 'react-native'
-import React from 'react'
+import React,{useState} from 'react'
 import Btn from './components/ButtonComp'
 import Row from './components/Row'
 
 const App = () => {
+
+  const [calc,setCalc]=useState('');
+  const [result,setResult]=useState('')
+
+  const ops=['/','*','+','-','.','%']
+
+  const updateCalc=(val)=>{
+    if(ops.includes(value)&&calc===''||
+      ops.includes
+    )
+  }
 
   const createDigits=(n,n1)=>{
     const digits=[];
@@ -84,7 +95,11 @@ export default App
 const styles = StyleSheet.create({
     result:{
       color:'#fff',
-      fontSize:60
+      fontSize:60,
+      textAlign:'right',
+      marginRight:20,
+      marginBottom:60,
+      marginTop:40
     },
     container:{
       flex:1,
@@ -104,5 +119,6 @@ const styles = StyleSheet.create({
       justifyContent:'center'
 
     },
+
 
 })
