@@ -84,6 +84,9 @@ const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
 
       const value= calc.slice(0,-1)
       setCalc(value)
+
+      if(!ops.includes(calc.slice(0,-1)))
+        setResult(eval(calc).toString())
     }
 
     const equals=()=>{

@@ -35,7 +35,7 @@ const App = () => {
       <Text style={styles.result}>
         {calc?calc:'0'}
         </Text>
-        <Text>={result}</Text>
+        <Text style={styles.result}>={result}</Text>
       </View>
       <Row>
         <Btn 
