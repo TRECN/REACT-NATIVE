@@ -11,9 +11,16 @@ const App = () => {
   const ops=['/','*','+','-','.','%']
 
   const updateCalc=(val)=>{
-    if(ops.includes(value)&&calc===''||
-      ops.includes
-    )
+    if(ops.includes(val)&&calc===''||
+      ops.includes(val)&&ops.includes(calc.slice(-1))
+    ){
+      return;
+    }
+    setCalc(calc+value)
+
+    if(!ops.includes(val)){
+      setResult(eval(calc+val).toString())
+    }
   }
 
   const createDigits=(n,n1)=>{
@@ -32,10 +39,11 @@ const App = () => {
       <StatusBar barStyle='light-content'/>
       
       <View >
-        <Text style={styles.result}>0</Text>
+      <Text style={styles.result}>{result?({result}):''}{calc||'0'}</Text>
       </View>
       <Row>
         <Btn 
+        
           title='AC'
           theme='secondary'
         />
@@ -44,10 +52,12 @@ const App = () => {
           theme='secondary'
         />
         <Btn 
+          onPress={()=>updateCalc('%')}
           title='%'
           theme='secondary'
         />
         <Btn 
+          onPress={()=>updateCalc('/')}
           title='/'
           theme='secondary'
         />
@@ -55,6 +65,7 @@ const App = () => {
       <Row>
         {createDigits(1,3)}
         <Btn 
+          onPress={()=>updateCalc('*')}
           title='x'
           theme='secondary'
         />
@@ -62,6 +73,7 @@ const App = () => {
       <Row>
         {createDigits(4,6)}
         <Btn 
+          onPress={()=>updateCalc('-')}
           title='-'
           theme='secondary'
         />
