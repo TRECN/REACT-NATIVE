@@ -88,8 +88,13 @@ const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
       const value= calc.slice(0,-1)
       setCalc(value)
 
+      if(value==''){
+          setResult('0')
+          return
+      }
       if(!ops.includes(value.charAt(value.length-1)))
         setResult(eval(value).toString())
+      
       else
         setResult(eval(value.slice(0,-1)))
         
