@@ -29,7 +29,7 @@ const App = () => {
       digits.push(
         <Btn 
         key={i} 
-        onPress={()=>updateCalc(i.toString())} 
+        onPress={()=>updateCalc(i.toString())}
         title={i.toString()}/>
       )
     }
