@@ -96,8 +96,10 @@ const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
     }
 
     const clickBtn=(title)=>{
-      if(title=='DEL')
+      if(title=='DEL'){
         delLast()
+
+      }
       else if(title=='=')
         equals()
       else if(title=='AC')
