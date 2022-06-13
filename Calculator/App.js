@@ -38,7 +38,10 @@ const App = () => {
       </View>
       <Row>
         <Btn 
-          
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
           title='AC'
           theme='secondary'
         />
