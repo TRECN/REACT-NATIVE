@@ -66,13 +66,16 @@ const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
     const ops=['/','*','+','-','.','%']
   
     const updateCalc=(val)=>{
-      if(ops.includes(val)&&calc===''||
-        ops.includes(val)&&ops.includes(calc.slice(-1))
-      ){
+      if(ops.includes(val)&&calc==='')
+      {
         return;
       }
+      if(ops.includes(val)&&ops.includes(calc.slice(-1)))
+      {
+        setCalc(calc.slice(0,-1)+val)
+        return
+      }
       setCalc(calc+val)
-  
       if(!ops.includes(val)){
         setResult(eval(calc+val).toString())
       }
