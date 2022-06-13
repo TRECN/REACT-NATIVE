@@ -70,6 +70,8 @@ const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
       {
         return;
       }
+      if(calc===''&&val=='0')
+        return
       if(ops.includes(val)&&ops.includes(calc.slice(-1)))
       {
         setCalc(calc.slice(0,-1)+val)

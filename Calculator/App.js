@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,StatusBar} from 'react-native'
+import { StyleSheet, Text, View,StatusBar,ScrollView} from 'react-native'
 import React,{useState} from 'react'
 import Btn from './components/ButtonComp'
 import Row from './components/Row'
@@ -30,13 +30,15 @@ const App = () => {
     // onPress, title, size, theme
     <View style={styles.container}>
       <StatusBar barStyle='light-content'/>
-      
+      <ScrollView>
       <View >
-      <Text style={styles.result}>
+      <Text style={styles.calc}>
         {calc?calc:'0'}
         </Text>
         <Text style={styles.result}>={result}</Text>
       </View>
+      </ScrollView>
+      
       <Row>
         <Btn 
           calc={calc}
@@ -147,9 +149,16 @@ const App = () => {
 export default App
 
 const styles = StyleSheet.create({
-    result:{
+    calc:{
       color:'#fff',
       fontSize:30,
+      textAlign:'right',
+      marginRight:20,
+      marginTop:40
+    },
+    result:{
+      color:'#808080',
+      fontSize:20,
       textAlign:'right',
       marginRight:20,
       marginBottom:60,
