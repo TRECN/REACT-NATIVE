@@ -66,14 +66,14 @@ const App = () => {
         />
       </Row>
       <Row>
-        {createDigits(1,3)}
+        
         <Btn 
-          onPress={()=>updateCalc('*')}
-          title='x'
+          onPress={()=>updateCalc('1')}
+          title='1'
           theme='secondary'
         />
       </Row>
-      <Row>
+      {/* <Row>
         {createDigits(4,6)}
         <Btn 
           onPress={()=>updateCalc('-')}
@@ -100,7 +100,7 @@ const App = () => {
           theme='equal'
 
         />
-      </Row>
+      </Row> */}
     </View>
     
   )

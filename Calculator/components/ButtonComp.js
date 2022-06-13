@@ -65,7 +65,7 @@ const ButtonComp = ({onPress, title, size, theme}) => {
 
 
     return (
-      <TouchableOpacity onPress={onPress} style={BtnStyle}>
+      <TouchableOpacity onPress={()=>onPress} style={BtnStyle}>
         <Text style={TxtStyle}>{title}</Text>
       </TouchableOpacity>
     );
