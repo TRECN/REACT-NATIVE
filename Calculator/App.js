@@ -16,7 +16,7 @@ const App = () => {
     ){
       return;
     }
-    setCalc(calc+value)
+    setCalc(calc+val)
 
     if(!ops.includes(val)){
       setResult(eval(calc+val).toString())
@@ -27,7 +27,10 @@ const App = () => {
     const digits=[];
     for(let i=n;i<=n1;i++){
       digits.push(
-        <Btn key={i} title={i.toString()}/>
+        <Btn 
+        key={i} 
+        onPress={()=>updateCalc(i.toString())} 
+        title={i.toString()}/>
       )
     }
     return digits
@@ -81,6 +84,7 @@ const App = () => {
       <Row>
         {createDigits(7,9)}
         <Btn 
+          onPress={()=>updateCalc('+')}
           title='+'
           theme='secondary'
         />
