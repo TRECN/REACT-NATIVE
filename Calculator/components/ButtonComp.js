@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const ButtonComp = ({onPress, title, size, theme}) => {
+const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
   const BtnStyle = [styles.Btn];
   const TxtStyle = [styles.Txt];
 
@@ -63,9 +63,24 @@ const ButtonComp = ({onPress, title, size, theme}) => {
     }
 
 
+    const ops=['/','*','+','-','.','%']
+  
+    const updateCalc=(val)=>{
+      if(ops.includes(val)&&calc===''||
+        ops.includes(val)&&ops.includes(calc.slice(-1))
+      ){
+        return;
+      }
+      setCalc(calc+val)
+  
+      if(!ops.includes(val)){
+        setResult(eval(calc+val).toString())
+      }
+    }
+
 
     return (
-      <TouchableOpacity onPress={onPress} style={BtnStyle}>
+      <TouchableOpacity onPress={()=>updateCalc(title)} style={BtnStyle}>
         <Text style={TxtStyle}>{title}</Text>
       </TouchableOpacity>
     );
