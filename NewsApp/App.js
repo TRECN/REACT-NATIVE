@@ -8,9 +8,13 @@ const Tab=createBottomTabNavigator();
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <Tab.Navigator>
+      <Tab.Screen/>
+      <Tab.Screen/>
+      <Tab.Screen/>
+      <Tab.Screen/>
+      <Tab.Screen/>
+    </Tab.Navigator>
   )
 }
 
