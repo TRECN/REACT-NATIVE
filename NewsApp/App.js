@@ -8,13 +8,15 @@ const Tab=createBottomTabNavigator();
 
 const App = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name='All'/>
-      <Tab.Screen name='Business'/>
-      <Tab.Screen name='Health'/>
-      <Tab.Screen name='Sports'/>
-      <Tab.Screen name='Tech'/>
-    </Tab.Navigator>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name='All'/>
+        <Tab.Screen name='Business'/>
+        <Tab.Screen name='Health'/>
+        <Tab.Screen name='Sports'/>
+        <Tab.Screen name='Tech'/>
+      </Tab.Navigator>
+    </NavigationContainer>
   )
 }
 
