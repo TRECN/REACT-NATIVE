@@ -9,11 +9,11 @@ const Tab=createBottomTabNavigator();
 const App = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name='all'/>
+      <Tab.Screen name='All'/>
       <Tab.Screen name='Business'/>
-      <Tab.Screen/>
-      <Tab.Screen/>
-      <Tab.Screen/>
+      <Tab.Screen name='Health'/>
+      <Tab.Screen name='Sports'/>
+      <Tab.Screen name='Tech'/>
     </Tab.Navigator>
   )
 }
