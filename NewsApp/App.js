@@ -1,5 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import { Icon } from 'react-native-elements';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
@@ -15,7 +16,13 @@ const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="All" component={All} />
+        <Tab.Screen name="All" component={All}
+          options={{
+            tabBarIcon:(props)=>(
+              <Icon type='feather' name='home' color={props.color}/>
+            ),
+          }}
+        />
         <Tab.Screen name="Business" component={Business} />
         <Tab.Screen name="Health" component={Health} />
         <Tab.Screen name="Sports" component={Sports} />
