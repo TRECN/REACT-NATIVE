@@ -4,7 +4,7 @@ import React from 'react';
 const All = () => {
   return (
     <View>
-      <Text>Rishabh</Text>
+      <Text style={{color:'red'}}>Rishabh</Text>
     </View>
   );
 };
