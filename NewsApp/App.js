@@ -1,37 +1,20 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
-import { Icon } from 'react-native-elements';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {NavigationContainer} from '@react-navigation/native';
-import All from './screens/All';
-import Business from './screens/Business';
-import Health from './screens/Health';
-import Sports from './screens/Sports';
-import Tech from './screens/Tech';
-
-const Tab = createBottomTabNavigator();
-
-const App = () => {
+export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="All" component={All}
-          options={{
-            tabBarIcon:(props)=>(
-              <Icon type='feather' name='home' color={props.color}/>
-            ),
-          }}
-        />
-        <Tab.Screen name="Business" component={Business} />
-        <Tab.Screen name="Health" component={Health} />
-        <Tab.Screen name="Sports" component={Sports} />
-        <Tab.Screen name="Tech" component={Tech} />
-      </Tab.Navigator>
-    </NavigationContainer>
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
-};
+}
 
-export default App;
-
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
