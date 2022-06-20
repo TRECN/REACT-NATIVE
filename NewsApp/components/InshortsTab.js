@@ -3,17 +3,17 @@ import React,{useState} from 'react'
 
 import { SceneMap, TabView } from 'react-native-tab-view';
 
-const FirstRoute=()=>(
+const DiscoverScreen=()=>(
     <View style={{flex:1, backgroundColor:'#ff4081'}} />
 )
 
-const secondRoute=()=>(
+const NewsScreen=()=>(
     <View style={{flex:1, backgroundColor:'#673ab7'}} />
 )
 
 const renderScene = SceneMap({
-    first:FirstRoute,
-    second:secondRoute,
+    first:DiscoverScreen,
+    second:NewsScreen,
 });
 
 const InshortsTab = () => {
@@ -21,8 +21,8 @@ const InshortsTab = () => {
 
   const [index,setIndex] = useState(0);
   const [routes]=useState([
-      {key:'first',title:'First'},
-      {key:'second',title:'Second'},
+      {key:'first',title:'Discover'},
+      {key:'second',title:'News'},
   ]);
   
   return (
