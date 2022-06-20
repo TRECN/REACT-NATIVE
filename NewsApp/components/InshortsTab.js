@@ -4,6 +4,7 @@ import React,{useState} from 'react'
 import { SceneMap, TabView } from 'react-native-tab-view';
 import DiscoverScreen from '../screens/DiscoverScreen';
 import NewsScreen from '../screens/NewsScreen';
+import TabNavigation from './TabNavigation'
 
 
 const renderScene = SceneMap({
