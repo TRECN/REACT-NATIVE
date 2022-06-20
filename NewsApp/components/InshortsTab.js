@@ -5,17 +5,10 @@ import { SceneMap, TabView } from 'react-native-tab-view';
 import DiscoverScreen from '../screens/DiscoverScreen';
 import NewsScreen from '../screens/NewsScreen';
 
-const Discover=()=>(
-    <DiscoverScreen/>
-)
-
-const News=()=>(
-    <NewsScreen/>
-)
 
 const renderScene = SceneMap({
-    first:Discover,
-    second:News,
+    first:DiscoverScreen,
+    second:NewsScreen,
 });
 
 const InshortsTab = () => {
@@ -33,6 +26,10 @@ const InshortsTab = () => {
         renderScene={renderScene}
         onIndexChange={setIndex}
         initialLayout={{width:layout.width}}
+        renderTabBar={()=><TabNavigation
+            index={index}
+            setIndex={setIndex}
+        />}
     />
 
     // <View>
