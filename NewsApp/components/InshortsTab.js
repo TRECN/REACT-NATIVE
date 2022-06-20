@@ -2,18 +2,20 @@ import { StyleSheet, Text, View ,useWindowDimensions,} from 'react-native'
 import React,{useState} from 'react'
 
 import { SceneMap, TabView } from 'react-native-tab-view';
+import DiscoverScreen from '../screens/DiscoverScreen';
+import NewsScreen from '../screens/NewsScreen';
 
-const DiscoverScreen=()=>(
-    <View style={{flex:1, backgroundColor:'#ff4081'}} />
+const Discover=()=>(
+    <DiscoverScreen/>
 )
 
-const NewsScreen=()=>(
-    <View style={{flex:1, backgroundColor:'#673ab7'}} />
+const News=()=>(
+    <NewsScreen/>
 )
 
 const renderScene = SceneMap({
-    first:DiscoverScreen,
-    second:NewsScreen,
+    first:Discover,
+    second:News,
 });
 
 const InshortsTab = () => {
