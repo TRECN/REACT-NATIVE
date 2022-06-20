@@ -1,11 +1,11 @@
 
 import { StyleSheet, Text, View ,StatusBar} from 'react-native';
-import InshortsTab from './components/InshortsTab';
+import InshortTab from './components/InshortsTab';
 
 export default function App() {
   return (
     <View style={{...styles.container,backgroundColor:'#282C35'}}>
-      <InshortsTab/>
+      <InshortTab/>
     </View>
   );
 }
