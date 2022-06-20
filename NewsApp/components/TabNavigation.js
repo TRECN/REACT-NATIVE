@@ -1,10 +1,14 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-export default function componentName() {
+const TabNavigation = ({index,setIndex}) => {
   return (
     <View>
-      <Text>Rishabh</Text>
-     </View>
-  );
+      <Text></Text>
+    </View>
+  )
 }
+
+export default TabNavigation
+
+const styles = StyleSheet.create({})
