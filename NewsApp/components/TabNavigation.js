@@ -7,8 +7,8 @@ const TabNavigation = ({index,setIndex}) => {
   return (
     <View style={{...styles.container,backgroundColor:'#282c35'}}>
       {index==='0'?
-        <TouchableOpacity>
-          <Text>
+        <TouchableOpacity style={styles.left}>
+          <Text style={{...styles.text,color:'lightgray'}}>
             <MaterialComunityIcons
               name='theme-light-dark'
               size={24}
@@ -25,6 +25,8 @@ export default TabNavigation
 
 const styles = StyleSheet.create({
     container:{
-        
+      flexDirection:'row',
+      justifyContent:'space-between',
+      padding:10      
     }
 })
