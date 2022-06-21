@@ -22,13 +22,16 @@ const TabNavigation = ({index,setIndex}) => {
       {index?'News Feed':'Discover'}
       </Text>
     
-    {
-      <TouchableOpacity style={styles.left} onPress={()=>{setIndex(1)}}>
-      
-      <Text style={{...styles.text, color:'black'}}>MyFeed</Text>
-      <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
-    </TouchableOpacity>
-      
+    {index?
+      (<TouchableOpacity style={styles.right} onPress={()=>{setIndex(1)}}>
+        <MaterialCommunityIcons name="reload" size={24} color="black" />
+      </TouchableOpacity>)
+      :(
+        <TouchableOpacity style={styles.left} onPress={()=>{setIndex(1)}}>
+        <Text style={{...styles.text, color:'black'}}>MyFeed</Text>
+        <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
+      </TouchableOpacity>
+      )
     }
     </View>
   )
@@ -49,6 +52,12 @@ const styles = StyleSheet.create({
       flexDirection:'row',
       alignItems:'center',
       width:80,
+      justifyContent: 'space-between',
+    },
+    right:{ 
+      flexDirection:'row',
+      alignItems:'center',
+      width:30,
       justifyContent: 'space-between',
     },
     text:{
