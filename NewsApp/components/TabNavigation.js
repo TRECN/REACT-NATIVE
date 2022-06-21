@@ -31,5 +31,11 @@ const styles = StyleSheet.create({
       alignItems:'center',
       borderBottomColor:'black',
       borderBottomWidth:0.5,
+    },
+    left:{ 
+      flexDirection:'row',
+      alignItems:'center',
+      width:80,
+      justifyContent: 'space-between',
     }
 })
