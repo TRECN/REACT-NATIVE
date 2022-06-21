@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
-import {MaterialComunityIcons} from '@expo/vector-icons'
+import {MaterialCommunityIcons} from '@expo/vector-icons'
 import React from 'react'
 import { TouchableOpacity } from 'react-native-web'
 
@@ -9,7 +9,7 @@ const TabNavigation = ({index,setIndex}) => {
       {index==='0'?
         <TouchableOpacity style={styles.left}>
           <Text style={{...styles.text,color:'lightgray'}}>
-            <MaterialComunityIcons
+            <MaterialCommunityIcons
               name='theme-light-dark'
               size={24}
               color='#007FFF'
@@ -37,5 +37,8 @@ const styles = StyleSheet.create({
       alignItems:'center',
       width:80,
       justifyContent: 'space-between',
+    },
+    text:{
+      fontSize:16,
     }
 })
