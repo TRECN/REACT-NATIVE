@@ -18,10 +18,12 @@ const TabNavigation = ({index,setIndex}) => {
           </TouchableOpacity>
         ) 
     }
-    <Text>Discover</Text>
+    <Text style={{...styles.center,color:'white'}}>
+      {index?'News Feed':'Discover'}
+      </Text>
     
     {
-      <TouchableOpacity style={styles.left} onPress={()=>{setIndex(0)}}>
+      <TouchableOpacity style={styles.left} onPress={()=>{setIndex(1)}}>
       
       <Text style={{...styles.text, color:'black'}}>MyFeed</Text>
       <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
