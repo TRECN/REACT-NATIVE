@@ -15,7 +15,7 @@ const TabNavigation = ({index,setIndex}) => {
               color='#007FFF'
             />
           </Text>
-        </TouchableOpacity>  
+        </TouchableOpacity>:<></>  
     }
     </View>
   )
