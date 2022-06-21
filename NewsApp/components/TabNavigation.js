@@ -9,7 +9,11 @@ const TabNavigation = ({index,setIndex}) => {
       {index==='0'?
         <TouchableOpacity>
           <Text>
-            <MaterialComunityIcons/>
+            <MaterialComunityIcons
+              name='theme-light-dark'
+              size={24}
+              color='#007FFF'
+            />
           </Text>
         </TouchableOpacity>  
     }
