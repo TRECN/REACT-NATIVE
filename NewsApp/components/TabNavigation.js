@@ -12,7 +12,7 @@ const TabNavigation = ({index,setIndex}) => {
             <MaterialCommunityIcons name="theme-light-dark" size={24} color="black" />
           </Text>
         </TouchableOpacity>):(
-          <TouchableOpacity style={styles.left}>
+          <TouchableOpacity style={styles.left} onPress={()=>{setIndex(0)}}>
             <MaterialIcons name="keyboard-arrow-left" size={24} color="black" />
             <Text style={{...styles.text, color:'black'}}>Discover</Text>
           </TouchableOpacity>
