@@ -21,10 +21,11 @@ const TabNavigation = ({index,setIndex}) => {
     <Text>Discover</Text>
     
     {
-      <Text style>My Feed
-        <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
-
-      </Text>
+      <TouchableOpacity style={styles.left} onPress={()=>{setIndex(0)}}>
+      
+      <Text style={{...styles.text, color:'black'}}>MyFeed</Text>
+      <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
+    </TouchableOpacity>
       
     }
     </View>
