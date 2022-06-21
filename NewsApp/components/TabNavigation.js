@@ -18,6 +18,15 @@ const TabNavigation = ({index,setIndex}) => {
           </TouchableOpacity>
         ) 
     }
+    <Text>Discover</Text>
+    
+    {
+      <Text style>My Feed
+        <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
+
+      </Text>
+      
+    }
     </View>
   )
 }
