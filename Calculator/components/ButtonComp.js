@@ -22,28 +22,7 @@ const styles = StyleSheet.create({
   Txt: {
     color: '#fff',
     fontSize: 25,
-  },
-  TxtSecond: {
-    color: '#060606',
-  },
-  BtnDouble: {
-    width: screen.width / 2 - 10,
-    flex: 0,
-  },
-  BtnSecondary: {
-    backgroundColor: '#a6a6a6',
-  },
-  BtnAccent: {
-    backgroundColor: '#f09a36',
-  },
-  BtnEqual:{
-    backgroundColor:'orange',
-  },
-  TxtEqual:{
-    textAlign:'center',
-    fontSize:50
-  }
-});
+
 
 const ButtonComp = ({ title, size, theme,setCalc,setResult,calc,result}) => {
   const BtnStyle = [styles.Btn];
