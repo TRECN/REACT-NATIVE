@@ -60,5 +60,13 @@ const styles = StyleSheet.create({
     },
     text:{
       fontSize:16,
+    },
+    center:{
+      paddingBottom:6,
+      borderBottomColor:'#007FFF',
+      borderBottomWidth:5,
+      borderRadius:10,
+      fontSize:16,
+      fontWeight:'600'
     }
 })
