@@ -24,7 +24,7 @@ const TabNavigation = ({index,setIndex}) => {
     
     {index?
       (<TouchableOpacity style={styles.right} onPress={()=>{setIndex(1)}}>
-        <MaterialCommunityIcons name="reload" size={24} color="blue" />
+        <MaterialCommunityIcons name="reload" size={24} color="black" />
       </TouchableOpacity>)
       :(
         <TouchableOpacity style={styles.left} onPress={()=>{setIndex(1)}}>
