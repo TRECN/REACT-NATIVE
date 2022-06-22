@@ -10,7 +10,19 @@ const screen = Dimensions.get('window');
 const ButtonWidth = screen.width / 4;
 
 const styles = StyleSheet.create({
-  
+  Btn: {
+    backgroundColor: '#333333',
+    borderRadius: Math.floor(ButtonWidth),
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: Math.floor(ButtonWidth - 10),
+    margin: 5,
+  },
+  Txt: {
+    color: '#fff',
+    fontSize: 25,
+  },
   TxtSecond: {
     color: '#060606',
   },
