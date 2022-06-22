@@ -9,12 +9,12 @@ const TabNavigation = ({index,setIndex}) => {
       {index===0?
         (<TouchableOpacity style={styles.left}>
           <Text style={{...styles.text, color:'black'}}>
-            <MaterialCommunityIcons name="theme-light-dark" size={24} color="black" />
+            <MaterialCommunityIcons name="theme-light-dark" size={24} color="#007FFF" />
           </Text>
         </TouchableOpacity>):(
           <TouchableOpacity style={styles.left} onPress={()=>{setIndex(0)}}>
             <MaterialIcons name="keyboard-arrow-left" size={24} color="#007FFF" />
-            <Text style={{...styles.text, color:'black'}}>Discover</Text>
+            <Text style={{...styles.text, color:'white'}}>Discover</Text>
           </TouchableOpacity>
         ) 
     }
@@ -24,11 +24,11 @@ const TabNavigation = ({index,setIndex}) => {
     
     {index?
       (<TouchableOpacity style={styles.right} onPress={()=>{setIndex(1)}}>
-        <MaterialCommunityIcons name="reload" size={24} color="black" />
+        <MaterialCommunityIcons name="reload" size={24} color="#007FFF" />
       </TouchableOpacity>)
       :(
         <TouchableOpacity style={styles.left} onPress={()=>{setIndex(1)}}>
-        <Text style={{...styles.text, color:'black'}}>MyFeed</Text>
+        <Text style={{...styles.text, color:'white'}}>MyFeed</Text>
         <MaterialIcons name="keyboard-arrow-right" size={24} color="#007FFF" />
       </TouchableOpacity>
       )
@@ -55,10 +55,8 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
     },
     right:{ 
-      flexDirection:'row',
-      alignItems:'center',
-      width:30,
-      justifyContent: 'space-between',
+      width:80,
+      alignItems:'flex-end'
     },
     text:{
       fontSize:16,
