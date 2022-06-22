@@ -39,7 +39,109 @@ const App = () => {
       </View>
       </ScrollView>
       
+      <Row>
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='AC'
+          theme='secondary'
+        />
+        <Btn 
+        calc={calc}
+        setCalc={setCalc}
+        result={result}
+        setResult={setResult}
+          title='DEL'
+          theme='secondary'
+        />
+        {/* % */}
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='%'
+          theme='secondary'
+        />
+        {/* / */}
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='/'
+          theme='secondary'
+        />
+      </Row>
+      <Row>
+      {createDigits(1,3)}
+      {/* * */}
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='*'
+          theme='secondary'
+        />
+      </Row>
+      <Row>
+        {createDigits(4,6)}
+        {/* - */}
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='-'
+          theme='secondary'
+          
+        />
+      </Row>
+      <Row>
+        {createDigits(7,9)}
+        {/* + */}
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='+'
+          theme='secondary'
+        />
+      </Row>
+      <Row>
+        {/* 0 */}
+        <Btn 
+        calc={calc}
+        setCalc={setCalc}
+        result={result}
+        setResult={setResult}
+          title='0'
+        />
+        {/* . */}
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='.' 
+        />
+        {/* = */}
+        <Btn 
+          calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+          title='='
+          size='double'
+          theme='equal'
 
+        />
+      </Row>
+    </View>
     
   )
 }
