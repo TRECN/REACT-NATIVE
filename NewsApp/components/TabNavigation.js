@@ -13,7 +13,7 @@ const TabNavigation = ({index,setIndex}) => {
           </Text>
         </TouchableOpacity>):(
           <TouchableOpacity style={styles.left} onPress={()=>{setIndex(0)}}>
-            <MaterialIcons name="keyboard-arrow-left" size={24} color="black" />
+            <MaterialIcons name="keyboard-arrow-left" size={24} color="#007FFF" />
             <Text style={{...styles.text, color:'black'}}>Discover</Text>
           </TouchableOpacity>
         ) 
@@ -29,7 +29,7 @@ const TabNavigation = ({index,setIndex}) => {
       :(
         <TouchableOpacity style={styles.left} onPress={()=>{setIndex(1)}}>
         <Text style={{...styles.text, color:'black'}}>MyFeed</Text>
-        <MaterialIcons name="keyboard-arrow-right" size={24} color="black" />
+        <MaterialIcons name="keyboard-arrow-right" size={24} color="#007FFF" />
       </TouchableOpacity>
       )
     }
