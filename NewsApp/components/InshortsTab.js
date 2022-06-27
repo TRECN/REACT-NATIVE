@@ -22,7 +22,16 @@ const InshortsTab = () => {
   ]);
   
   return (
-    
+    <TabView
+        navigationState={{index,routes}}
+        renderScene={renderScene}
+        onIndexChange={setIndex}
+        initialLayout={{width:layout.width}}
+        renderTabBar={()=><TabNavigation
+            index={index}
+            setIndex={setIndex}
+        />}
+    />
 
     // <View>
     //   <Text>InshortsTab</Text>
