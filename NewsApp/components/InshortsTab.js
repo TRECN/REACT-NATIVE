@@ -15,12 +15,7 @@ const renderScene = SceneMap({
 const InshortsTab = () => {
   const layout = useWindowDimensions();
 
-  const [index,setIndex] = useState(0);
-  const [routes]=useState([
-      {key:'first',title:'Discover'},
-      {key:'second',title:'News'},
-  ]);
-  
+
   return (
     <TabView
         navigationState={{index,routes}}
