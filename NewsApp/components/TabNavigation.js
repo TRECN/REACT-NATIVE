@@ -51,13 +51,7 @@ const styles = StyleSheet.create({
       width:80,
       justifyContent: 'space-between',
     },
-    right:{ 
-      width:80,
-      alignItems:'flex-end'
-    },
-    text:{
-      fontSize:16,
-    },
+   
     center:{
       paddingBottom:6,
       borderBottomColor:'#007FFF',
