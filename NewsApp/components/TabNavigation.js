@@ -6,19 +6,7 @@ import React from 'react'
 const TabNavigation = ({index,setIndex}) => {
   return (
     <View style={{...styles.container,backgroundColor:'#282c35'}}>
-      {index===0?
-        (<TouchableOpacity style={styles.left}>
-          <Text style={{...styles.text, color:'black'}}>
-            <MaterialCommunityIcons name="theme-light-dark" size={24} color="#007FFF" />
-          </Text>
-        </TouchableOpacity>):(
-          <TouchableOpacity style={styles.left} onPress={()=>{setIndex(0)}}>
-            <MaterialIcons name="keyboard-arrow-left" size={24} color="#007FFF" />
-            <Text style={{...styles.text, color:'white'}}>Discover</Text>
-          </TouchableOpacity>
-        ) 
-    }
-   
+      
     {index?
       (<TouchableOpacity style={styles.right} onPress={()=>{setIndex(1)}}>
         <MaterialCommunityIcons name="reload" size={24} color="#007FFF" />
