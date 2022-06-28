@@ -5,10 +5,6 @@ import React,{ useState } from 'react'
 
 const TabNavigation = ({index,setIndex}) => {
 
-  const [mode,setMode]=useState(true);
-  const modeStyle={
-    color:'',
-  };
 
   const clicked=()=>{
     setMode(mode?false:true);
