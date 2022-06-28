@@ -3,21 +3,16 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons'; 
 import React,{ useState } from 'react'
 
-const TabNavigation = ({index,setIndex}) => {
+const TabNavigation = ({index,setIndex,mode,setMode}) => {
 
-  const [mode,setMode]=useState(true);
-  const modeStyle=[styles.container];
+  
 
   const clicked=()=>{
     setMode(mode?false:true);
-    if(mode)
-      modeStyle.push(styles.dark);
-    else
-      modeStyle.push(styles.light);
   }
 
   return (
-    <View style={{...styles.container}}>
+    <View style={{...styles.container,}}>
       {index===0?
         (<TouchableOpacity style={styles.left} onPress={()=>clicked()}>
           <Text style={{...styles.text, color:'black'}}>
