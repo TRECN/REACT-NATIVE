@@ -9,14 +9,17 @@ const TabNavigation = ({index,setIndex}) => {
   const modeStyle=[styles.container];
 
   const clicked=()=>{
+    setMode(mode?false:true);
     if(mode)
-      modeStyle.push()
+      modeStyle.push(styles.dark);
+    else
+      modeStyle.push(styles.light);
   }
 
   return (
     <View style={modeStyle}>
       {index===0?
-        (<TouchableOpacity style={styles.left} onPress={()=>setMode(mode?false:true)}>
+        (<TouchableOpacity style={styles.left} onPress={()=>clicked()}>
           <Text style={{...styles.text, color:'black'}}>
             <MaterialCommunityIcons name="theme-light-dark" size={24} color="#007FFF" />
           </Text>
@@ -81,7 +84,7 @@ const styles = StyleSheet.create({
       color:'#007FFF',
     },
     light:{
-
+      color:'white'
     }
     
 })
