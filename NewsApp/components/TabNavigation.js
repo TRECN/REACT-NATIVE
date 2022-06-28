@@ -19,7 +19,7 @@ const TabNavigation = ({index,setIndex}) => {
         ) 
     }
 
-    <Text style={}>{index?"news":"Discover"}</Text>
+    <Text style={{...styles.center}}>{index?"MyFeed":"Discover"}</Text>
    
     {index?
       (<TouchableOpacity style={styles.right} onPress={()=>{setIndex(1)}}>
