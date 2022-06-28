@@ -10,6 +10,13 @@ const TabNavigation = ({index,setIndex}) => {
     color:'',
   };
 
+  const clicked=()=>{
+    setMode(mode?false:true);
+    if(mode)
+      modeStyle.push(styles.dark);
+    else
+      modeStyle.push(styles.light);
+  }
 
   return (
     <View style={{...styles.container,}}>
