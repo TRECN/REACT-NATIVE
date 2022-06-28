@@ -14,7 +14,7 @@ const TabNavigation = ({index,setIndex}) => {
   return (
     <View style={modeStyle}>
       {index===0?
-        (<TouchableOpacity style={styles.left} onPress={setMode(mode?false:true)}>
+        (<TouchableOpacity style={styles.left} >
           <Text style={{...styles.text, color:'black'}}>
             <MaterialCommunityIcons name="theme-light-dark" size={24} color="#007FFF" />
           </Text>
