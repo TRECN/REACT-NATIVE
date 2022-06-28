@@ -14,7 +14,10 @@ export default function App() {
 
   return (
     <View style={{...styles.container,backgroundColor:col}}>
-      <InshortTab />
+      <InshortTab 
+        mode={mode}
+        setMode={setMode}
+      />
     </View>
   );
 }
