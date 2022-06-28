@@ -12,7 +12,7 @@ const renderScene = SceneMap({
     second:NewsScreen,
 });
 
-const InshortsTab = (mode,setMode) => {
+const InshortsTab = () => {
   const layout = useWindowDimensions();
 
   const [index,setIndex] = useState(0);
@@ -30,8 +30,6 @@ const InshortsTab = (mode,setMode) => {
         renderTabBar={()=><TabNavigation
             index={index}
             setIndex={setIndex}
-            mode={mode}
-            setMode={setMode}
         />}
     />
 
