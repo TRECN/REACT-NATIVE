@@ -1,20 +1,22 @@
 import { StyleSheet, Text, View,TouchableOpacity} from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons'; 
-import React from 'react'
-import { useState } from 'react/cjs/react.production.min';
+import React,{ useState } from 'react'
 
 const TabNavigation = ({index,setIndex}) => {
 
   const [mode,setMode]=useState(true);
   const modeStyle=[styles.container];
 
-
+  const clicked=()=>{
+    if(mode)
+      modeStyle.push()
+  }
 
   return (
-    <View style={{...styles.container}}>
+    <View style={modeStyle}>
       {index===0?
-        (<TouchableOpacity style={styles.left} >
+        (<TouchableOpacity style={styles.left} onPress={()=>setMode(mode?false:true)}>
           <Text style={{...styles.text, color:'black'}}>
             <MaterialCommunityIcons name="theme-light-dark" size={24} color="#007FFF" />
           </Text>
@@ -75,5 +77,11 @@ const styles = StyleSheet.create({
       fontSize:16,
       fontWeight:'600'
     },
+    dark:{
+      color:'#007FFF',
+    },
+    light:{
+
+    }
     
 })
