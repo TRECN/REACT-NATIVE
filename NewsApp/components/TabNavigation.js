@@ -3,12 +3,19 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons'; 
 import React,{ useState } from 'react'
 
-const TabNavigation = ({index,setIndex,mode,setMode}) => {
+const TabNavigation = ({index,setIndex}) => {
 
-  
+  const [mode,setMode]=useState(true);
+  const modeStyle={
+    color:'',
+  };
 
   const clicked=()=>{
     setMode(mode?false:true);
+    if(mode)
+      modeStyle.push(styles.dark);
+    else
+      modeStyle.push(styles.light);
   }
 
   return (
