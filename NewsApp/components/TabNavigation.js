@@ -12,7 +12,7 @@ const TabNavigation = ({index,setIndex}) => {
 
 
   return (
-    <View style={modeStyle}>
+    <View style={{...styles.container}}>
       {index===0?
         (<TouchableOpacity style={styles.left} >
           <Text style={{...styles.text, color:'black'}}>
