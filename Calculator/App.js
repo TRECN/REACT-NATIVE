@@ -8,7 +8,23 @@ const App = () => {
   const [calc,setCalc]=useState("");
   const [result,setResult]=useState("")
 
-
+  const createDigits=(n,n1)=>{
+    const digits=[];
+    for(let i=n;i<=n1;i++){
+      digits.push(
+        <Btn 
+        key={i} 
+        calc={calc}
+          setCalc={setCalc}
+          result={result}
+          setResult={setResult}
+        
+        title={i.toString()}/>
+      )
+    }
+    return digits
+  }
+  
 
   return (
     // onPress, title, size, theme
