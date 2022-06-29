@@ -30,14 +30,7 @@ const App = () => {
     // onPress, title, size, theme
     <View style={styles.container}>
       <StatusBar barStyle='light-content'/>
-      <ScrollView>
-      <View >
-      <Text style={styles.calc}>
-        {calc?calc:'0'}
-        </Text>
-        <Text style={styles.result}>={result}</Text>
-      </View>
-      </ScrollView>
+      
       
       <Row>
         <Btn 
