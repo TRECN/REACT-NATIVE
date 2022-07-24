@@ -10,3 +10,12 @@ export default function App() {
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+    marginTop:50,
+    marginLeft:50,
+  
+  },
+});
