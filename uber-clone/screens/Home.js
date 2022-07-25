@@ -5,7 +5,7 @@ import tw from 'tailwind-react-native-classnames';
 const Home = () => {
   return (
     <SafeAreaView>
-        <Text style={styles.text}>UBER</Text>
+        <Text style={tw`pt-6 bg-blue-100`}>UBER</Text>
     </SafeAreaView>
   )
 }
