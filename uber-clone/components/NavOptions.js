@@ -13,22 +13,23 @@ const data=[
         id:"2",
         title:"Order Food",
         image:"https://links.papareact.com/28w",
-        screem:'EatsScreen'
+        screen:'EatsScreen'
 
-    }
-]
+    },
+];
 
 const NavOptions = () => {
   return (
     <FlatList 
         data={data}
         horizontal
-        renderItem={({item})=>{
+        renderItem={({item})=>(
             <TouchableOpacity>
                 <Text>{item.title}</Text>
             </TouchableOpacity>
-        }}
+        )}
     />
+    
   )
 }
 
