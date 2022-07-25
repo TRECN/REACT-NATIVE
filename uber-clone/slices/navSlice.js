@@ -1,15 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState={
-    origin:null,
-    destination:null,
-    travelTimeInfo:null,
-}
-
 export const navSlice=createSlice({
     name:'nav',
     initialState: {
-        value: 0,
+        origin:null,
+        destination:null,
+        travelTimeInfo:null,
       },
       reducers: {
         increment: (state) => {
