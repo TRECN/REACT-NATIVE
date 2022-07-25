@@ -27,7 +27,7 @@ const NavOptions = () => {
         keyExtractor={(item)=>item.id}
         horizontal
         renderItem={({item})=>(
-            <TouchableOpacity style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
+            <TouchableOpacity style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 rounded-lg`}>
                 <View>
                     <Image
                     style={styles.img}
