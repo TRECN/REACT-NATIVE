@@ -4,7 +4,7 @@ import tw from 'tailwind-react-native-classnames';
 import { Image } from 'react-native';
 import NavOptions from '../components/NavOptions';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
-import {Google_Maps_ApiKey} from '@env'
+import {GOOGLE_MAPS_APIKEY} from '@env'
 
 const Home = () => {
   return (
