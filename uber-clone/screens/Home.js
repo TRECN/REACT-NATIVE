@@ -3,6 +3,7 @@ import React from 'react'
 import tw from 'tailwind-react-native-classnames';
 import { Image } from 'react-native';
 import NavOptions from '../components/NavOptions';
+import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
 const Home = () => {
   return (
