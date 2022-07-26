@@ -4,16 +4,13 @@ import { Provider } from 'react-redux';
 import Home from './screens/Home';
 import { store } from './store';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
     <Provider store={store}>
-        <NavigationContainer>
-          <SafeAreaProvider>
+        <SafeAreaProvider>
             <Home/> 
-          </SafeAreaProvider>   
-        </NavigationContainer>
+          </SafeAreaProvider> 
 
       
     </Provider>
