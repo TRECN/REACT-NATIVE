@@ -4,7 +4,7 @@ import tw from 'tailwind-react-native-classnames';
 import { Icon } from 'react-native-elements/dist/icons/Icon';
 import { useNavigation } from '@react-navigation/native';
 
-
+// data array for the navigation tabs
 const data=[
     {
         id:"1",
@@ -23,6 +23,7 @@ const data=[
 ];
 
 const NavOptions = () => {
+    //using the navigation options
     const Navigation=useNavigation()
   return (
     <FlatList 
@@ -30,8 +31,10 @@ const NavOptions = () => {
         keyExtractor={(item)=>item.id}
         horizontal
         renderItem={({item})=>(
+            // creating a button using touchableOpacity
             <TouchableOpacity 
                 style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 rounded-lg`}
+                //navigation implimentation
                 onPress={()=>Navigation.navigate(item.screen)}>
                 <View>
                     <Image

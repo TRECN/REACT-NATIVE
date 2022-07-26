@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
     <View style={tw`p-5`}>
+        {/* uber image */}
      <Image 
          style={{
              width:100,
@@ -18,6 +19,8 @@ const Home = () => {
              uri:'https://links.papareact.com/gzs',
          }}
      />
+     {/* navigation tabs */}
+     
      <NavOptions/>
     </View>
     
