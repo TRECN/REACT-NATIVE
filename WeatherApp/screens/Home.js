@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
         <View style={tw`p-5`}>
-            <Text>Home</Text>
+            
         </View>
     </SafeAreaView>
   )
