@@ -2,8 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
-import {Location,Permission} from 'expo'
-
+import { currLocation } from "../components/currLocation";
 
 
 const Home = () => {
@@ -12,9 +11,9 @@ const Home = () => {
 
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
-        <View style={tw`p-5`}>
         
-        </View>
+          <currLocation/>
+        
     </SafeAreaView>
   )
 }
