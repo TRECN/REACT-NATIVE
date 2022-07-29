@@ -20,11 +20,13 @@ const currLocation = () => {
             console.log(er);
         }
     }
-    useEffect
+    useEffect(()=>{
+       getLocation(); 
+    },[])
 
   return (
     <View>
-      <Text>currLocation</Text>
+      <Text>{JSON.stringify(location)}</Text>
     </View>
   )
 }
