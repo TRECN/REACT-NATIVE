@@ -31,8 +31,8 @@ const Home = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full `}>
         <View >
-          <Text style={tw`text-lg p-10`}>{long}</Text>
-          <Text style={tw`text-lg p-10`}>{lat}</Text>
+          <Text style={tw`text-lg p-10`}>Longitude: {long}</Text>
+          <Text style={tw`text-lg p-10`}>Latitude: {lat}</Text>
         </View>
     </SafeAreaView>
   )
